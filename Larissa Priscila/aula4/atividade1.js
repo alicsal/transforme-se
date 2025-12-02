@@ -6,15 +6,16 @@ termina o programa.
 O usuário tem no máximo 10 tentativas e no final fala se
 ele terminou ou se acabou a quantidade de tentativas.
 */ 
-input = require("../input");
+const {sorteia, output} = require('../larissa'); // não precisa importar tds os arquivos & na ordem -apenas o mesmo nome 
+//do respectivo arquivo é necessário
 
 (async()=>{
 
-    nroAleatorio = Math.floor(Math.random()*10)
 
     for(let i=0; i<10; i++){
-        console.log("Digite um número aleatório de 0 a 9");    
-        nroUsuario = Number(await input());
+
+        var nroUsuario = Number(await output("Digite um número aleatório de 0 a 9"));
+        var nroAleatorio = sorteia(10)
 
         if(isNaN(nroUsuario) || nroUsuario < 0){
             console.log(`\n\nDIGITE SOMENTE NÚMEROS E POSITIVOS`)
