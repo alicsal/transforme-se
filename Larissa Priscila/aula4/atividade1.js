@@ -13,7 +13,7 @@ input = require("../input");
     nroAleatorio = Math.floor(Math.random()*10)
 
     for(let i=0; i<10; i++){
-        console.log("Digite um número aleatório");    
+        console.log("Digite um número aleatório de 0 a 9");    
         nroUsuario = Number(await input());
 
         if(isNaN(nroUsuario) || nroUsuario < 0){
