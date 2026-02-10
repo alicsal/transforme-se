@@ -28,7 +28,7 @@ main, section > div{
 }
 
 .primary {
-    background-color: rgb(204, 255, 0);
+    background-color: #dbe219;
 }
 
 .secundary {
@@ -177,4 +177,13 @@ div:hover > .hidden{
 
 .content{
     max-width: 1366px;
+}
+
+.menu{
+    text-decoration: inherit;
+    color: #fff;
+}
+
+#link_about{
+    color:#dbe219
 }
