@@ -187,3 +187,38 @@ div:hover > .hidden{
 #link_about{
     color:#dbe219
 }
+
+input{
+    border: #894C4C solid 2px;
+    box-shadow: -2px -2px 6px 3px rgb(138, 120, 120) inset;
+    -webkit-box-shadow: -2px -2px 6px 3px rgb(138, 120, 120) inset;
+    -moz-box-shadow: -2px -2px 6px 3px rgba(138, 120, 120) inset;
+
+    background-color: #FFF;
+    color: #000;
+    
+    padding: 5px 10px;
+    /*se os botões tiverem altura, adicionar aqui também */
+    border-radius: 5px;
+}
+
+input:focus-visible{
+     box-shadow: -2px -2px 6px 3px rgb(201, 171, 132) inset;
+    -webkit-box-shadow: -2px -2px 6px 3px rgb(201, 171, 132) inset;
+    -moz-box-shadow: -2px -2px 6px 3px rgba(201, 171, 132) inset;
+} 
+
+.toast{
+    position: fixed; /*fixo em relaçao a tela*/
+    top: 15px;
+    right: 15px;
+    width: 190px;
+    
+    z-index: 9999; /*camada da tela*/
+
+    padding: 5px 10px;
+    border-radius: 10px;
+    background-color: #f00;    
+    color: #fbfbfb;
+}
+    

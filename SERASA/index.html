@@ -3,12 +3,32 @@
         <link rel="stylesheet" href="style.css" />
    </head> 
    <body>
+        <div class="toast hidden">
+            <!-- um botao de fechar -->
+            <p id="toast"></p>
+            <!-- um botão de mostrar os logs-->
+        </div>
+
    <!-- Aqui é o corpo da pagina -->
         <nav class="top-bar">
             <img />
             <a id="link_about" href="#about" class="menu">Sobre mim</a>
             <a id="contact" class="menu">Contato</a>
-            <a class="button primary shadow">botão</a>
+            <input
+                type="email"
+                placeholder="Digite seu melhor e-mail"
+                onkeydown="setEmail(event)"
+                />
+                <!-- this é o próprio elemento, onchange é sempre quando muda a função-->
+                <!-- onkeydown salva letra por letra-->
+
+            <a 
+                class="button primary shadow"
+                onclick="handleRegister()"
+                >
+                Cadastre-se
+            </a>            
+            
         </nav>
         <main>
             <!-- hero -->
