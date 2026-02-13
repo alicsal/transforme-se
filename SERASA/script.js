@@ -38,7 +38,7 @@ function showToast(msg){
     const pToast = document.getElementById('toast');
     pToast.textContent = msg;
 
-    // 1º param eh uma funcao / 2º param eh o tempo
+    // 1 param eh uma funcao / 2 param eh o tempo
     setTimeout( () => {
         toast.classList.add('hidden');
         pToast.textContent = '';
@@ -46,3 +46,35 @@ function showToast(msg){
 
 
 }
+
+let portfolio = [ //vetor
+    { //objeto
+        title: "Qualquer caminho serve",
+        description: "Ainda nao sei."
+    },
+    {
+        title: "blaublau",
+        description: "sonoplastia do Tas mania"
+    },
+    {
+        title: "Hora da Estrela",
+        description: "Um belo livro de Clarice"
+    },
+];
+
+function portfolioList(){
+    const divPortfolio = document.querySelector("#my-portfolio");
+
+    portfolio.map(p => {
+        let card = document.createElement("div");
+        let titulo = document.createElement("h3");
+        let descricao = document.createElement("p");
+
+        titulo.textContent = p.title;
+        descricao.textContent = p.description;
+        card.appendChild(titulo);
+        card.appendChild(descricao);
+        divPortfolio.appendChild(card);
+    });
+}
+portfolioList();
